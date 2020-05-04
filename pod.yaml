@@ -2,7 +2,7 @@ apiVersion: v1 # api version a pod can be found
 kind: Pod # what type of kubernetes resource?
 metadata:
   labels:
-    run: hello-world # labels fro the pod - used to target the pod in the cluster 
+    app: hello-world # labels fro the pod - used to target the pod in the cluster 
   name: hello-world # name of the pod
 spec:
   containers:
