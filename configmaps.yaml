@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: game-demo
+  name: hello-world
 data:
   language: "JS"
   conference: "JS Remote Conf"
