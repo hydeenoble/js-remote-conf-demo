@@ -16,3 +16,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag hydeenoble/js-remote-conf-demo:latest
+    - name: Docker login
+      run: docker login -u my-account -p ${{ secrets.GITHUB_TOKEN }}
+    - name: Push Image
+      run: docker push hydeenoble/js-remote-conf-demo:latest
