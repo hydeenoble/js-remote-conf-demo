@@ -5,6 +5,7 @@ metadata:
 spec:
   selector:
     app: hello-world
+  type: LoadBalancer | NodePort | ClusterIP  
   ports:
   - port: 8080
     targetPort: 80

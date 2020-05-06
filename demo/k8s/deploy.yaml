@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: js-remote-conf
+spec:
+  selector:
+    matchLabels:
+      app: js-remote-conf
+  template:
+    metadata:
+      labels:
+        app: js-remote-conf
+    spec:
+      containers:
+      - name: js-remote-conf
+        image: hydeenoble/js-remote-conf-demo:latest
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 3000
