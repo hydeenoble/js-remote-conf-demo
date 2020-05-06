@@ -4,5 +4,4 @@ metadata:
   name: hello-world
 data:
   language: "JS"
-  conference: "JS Remote Conf"
   website: jsremoteconf.com

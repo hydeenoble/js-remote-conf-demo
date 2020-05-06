@@ -1,10 +1,11 @@
-apiVersion: v1 # api version a pod can be found
-kind: Pod # what type of kubernetes resource?
+apiVersion: v1 
+kind: Pod 
 metadata:
   labels:
-    app: hello-world # labels fro the pod - used to target the pod in the cluster 
-  name: hello-world # name of the pod
+    app: hello-world
+    tier: demo
+  name: hello-world
 spec:
   containers:
-  - image: nginx:latest # docker image to run in the pod
-    name: hello-world # docker of the continer in the pod
+  - image: nginx:latest 
+    name: hello-world

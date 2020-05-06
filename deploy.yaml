@@ -6,10 +6,12 @@ spec:
   selector:
     matchLabels:
       app: hello-world
+      tier: demo
   template:
     metadata:
       labels:
         app: hello-world
+        tier: demo
     spec:
       containers:
       - name: hello-world
