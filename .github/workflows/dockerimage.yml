@@ -17,6 +17,6 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag hydeenoble/js-remote-conf-demo:latest
     - name: Docker login
-      run: docker login -u my-account -p ${{ secrets.GITHUB_TOKEN }}
+      run: docker login -u my-account -p ${{ secrets.DOCKER_PASSWORD }}
     - name: Push Image
       run: docker push hydeenoble/js-remote-conf-demo:latest
