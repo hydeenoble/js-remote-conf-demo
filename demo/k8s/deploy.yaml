@@ -6,7 +6,6 @@ spec:
   selector:
     matchLabels:
       app: js-remote-conf
-  replicas: 3
   template:
     metadata:
       labels:
